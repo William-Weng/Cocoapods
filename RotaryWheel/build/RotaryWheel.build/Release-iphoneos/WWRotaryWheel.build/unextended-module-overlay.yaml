@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/william.weng/Desktop/William-Weng/SwiftFramework/(Cocoapods)/RotaryWheel/build/Release-iphoneos/WWRotaryWheel.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/william.weng/Desktop/William-Weng/SwiftFramework/(Cocoapods)/RotaryWheel/build/RotaryWheel.build/Release-iphoneos/WWRotaryWheel.build/unextended-module.modulemap',
+    }]
+  }]
+}

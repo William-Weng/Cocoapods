@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		64BB9E51212D69B70081762E /* WWRotaryWheel_Build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 64BB9E52212D69B70081762E /* Build configuration list for PBXAggregateTarget "WWRotaryWheel_Build" */;
+			buildPhases = (
+				64BB9E55212D69C30081762E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = WWRotaryWheel_Build;
+			productName = WWRotaryWheel_Build;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6493081E212C1674000056CF /* RotaryWheel.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493081D212C1674000056CF /* RotaryWheel.xcassets */; };
+		64BB9E3F212D63FB0081762E /* WWRotaryWheel.h in Headers */ = {isa = PBXBuildFile; fileRef = 64BB9E3D212D63FB0081762E /* WWRotaryWheel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64BB9E42212D63FB0081762E /* WWRotaryWheel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BB9E3B212D63FB0081762E /* WWRotaryWheel.framework */; };
+		64BB9E43212D63FB0081762E /* WWRotaryWheel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64BB9E3B212D63FB0081762E /* WWRotaryWheel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64BB9E47212D64050081762E /* WWRotaryWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DBD0B7212A5C1000DE1DF5 /* WWRotaryWheel.swift */; };
+		64BB9E48212D64050081762E /* WWRotaryWheel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D5785212D532C004CDA2B /* WWRotaryWheel+.swift */; };
+		64BB9E49212D647C0081762E /* WWRotaryWheel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64DBD0B8212A5C1000DE1DF5 /* WWRotaryWheel.xib */; };
+		64BB9E4A212D65BA0081762E /* WWRotaryWheel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 64DBD0B7212A5C1000DE1DF5 /* WWRotaryWheel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		64DBD091212A5B2D00DE1DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DBD090212A5B2D00DE1DF5 /* AppDelegate.swift */; };
+		64DBD093212A5B2D00DE1DF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DBD092212A5B2D00DE1DF5 /* ViewController.swift */; };
+		64DBD096212A5B2D00DE1DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DBD094212A5B2D00DE1DF5 /* Main.storyboard */; };
+		64DBD098212A5B2D00DE1DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64DBD097212A5B2D00DE1DF5 /* Assets.xcassets */; };
+		64DBD09B212A5B2D00DE1DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DBD099212A5B2D00DE1DF5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64BB9E40212D63FB0081762E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DBD085212A5B2D00DE1DF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64BB9E3A212D63FB0081762E;
+			remoteInfo = WWRotaryWheel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64DBD0F3212A5F0C00DE1DF5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64BB9E43212D63FB0081762E /* WWRotaryWheel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		641D5785212D532C004CDA2B /* WWRotaryWheel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WWRotaryWheel+.swift"; sourceTree = "<group>"; };
+		6493081D212C1674000056CF /* RotaryWheel.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RotaryWheel.xcassets; sourceTree = "<group>"; };
+		64BB9E3B212D63FB0081762E /* WWRotaryWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWRotaryWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BB9E3D212D63FB0081762E /* WWRotaryWheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWRotaryWheel.h; sourceTree = "<group>"; };
+		64BB9E3E212D63FB0081762E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DBD08D212A5B2D00DE1DF5 /* RotaryWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotaryWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DBD090212A5B2D00DE1DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64DBD092212A5B2D00DE1DF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64DBD095212A5B2D00DE1DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64DBD097212A5B2D00DE1DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64DBD09A212A5B2D00DE1DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64DBD09C212A5B2D00DE1DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DBD0B7212A5C1000DE1DF5 /* WWRotaryWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRotaryWheel.swift; sourceTree = "<group>"; };
+		64DBD0B8212A5C1000DE1DF5 /* WWRotaryWheel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWRotaryWheel.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64BB9E37212D63FB0081762E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DBD08A212A5B2D00DE1DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BB9E42212D63FB0081762E /* WWRotaryWheel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64BB9E3C212D63FB0081762E /* WWRotaryWheel */ = {
+			isa = PBXGroup;
+			children = (
+				64BB9E3D212D63FB0081762E /* WWRotaryWheel.h */,
+				64DBD0B7212A5C1000DE1DF5 /* WWRotaryWheel.swift */,
+				641D5785212D532C004CDA2B /* WWRotaryWheel+.swift */,
+				64DBD0B8212A5C1000DE1DF5 /* WWRotaryWheel.xib */,
+				64BB9E3E212D63FB0081762E /* Info.plist */,
+			);
+			path = WWRotaryWheel;
+			sourceTree = "<group>";
+		};
+		64DBD084212A5B2D00DE1DF5 = {
+			isa = PBXGroup;
+			children = (
+				64DBD08F212A5B2D00DE1DF5 /* RotaryWheel */,
+				64BB9E3C212D63FB0081762E /* WWRotaryWheel */,
+				64DBD08E212A5B2D00DE1DF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64DBD08E212A5B2D00DE1DF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64DBD08D212A5B2D00DE1DF5 /* RotaryWheel.app */,
+				64BB9E3B212D63FB0081762E /* WWRotaryWheel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64DBD08F212A5B2D00DE1DF5 /* RotaryWheel */ = {
+			isa = PBXGroup;
+			children = (
+				64DBD0B5212A5B7D00DE1DF5 /* Assets */,
+				64DBD0B6212A5B8700DE1DF5 /* ViewController */,
+				64DBD0B4212A5B5F00DE1DF5 /* Storyboard */,
+				64DBD090212A5B2D00DE1DF5 /* AppDelegate.swift */,
+				64DBD09C212A5B2D00DE1DF5 /* Info.plist */,
+			);
+			path = RotaryWheel;
+			sourceTree = "<group>";
+		};
+		64DBD0B4212A5B5F00DE1DF5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				64DBD094212A5B2D00DE1DF5 /* Main.storyboard */,
+				64DBD099212A5B2D00DE1DF5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		64DBD0B5212A5B7D00DE1DF5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				64DBD097212A5B2D00DE1DF5 /* Assets.xcassets */,
+				6493081D212C1674000056CF /* RotaryWheel.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		64DBD0B6212A5B8700DE1DF5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64DBD092212A5B2D00DE1DF5 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		64BB9E38212D63FB0081762E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BB9E3F212D63FB0081762E /* WWRotaryWheel.h in Headers */,
+				64BB9E4A212D65BA0081762E /* WWRotaryWheel.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		64BB9E3A212D63FB0081762E /* WWRotaryWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BB9E46212D63FB0081762E /* Build configuration list for PBXNativeTarget "WWRotaryWheel" */;
+			buildPhases = (
+				64BB9E36212D63FB0081762E /* Sources */,
+				64BB9E37212D63FB0081762E /* Frameworks */,
+				64BB9E38212D63FB0081762E /* Headers */,
+				64BB9E39212D63FB0081762E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWRotaryWheel;
+			productName = WWRotaryWheel;
+			productReference = 64BB9E3B212D63FB0081762E /* WWRotaryWheel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		64DBD08C212A5B2D00DE1DF5 /* RotaryWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DBD09F212A5B2D00DE1DF5 /* Build configuration list for PBXNativeTarget "RotaryWheel" */;
+			buildPhases = (
+				64DBD089212A5B2D00DE1DF5 /* Sources */,
+				64DBD08A212A5B2D00DE1DF5 /* Frameworks */,
+				64DBD08B212A5B2D00DE1DF5 /* Resources */,
+				64DBD0F3212A5F0C00DE1DF5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64BB9E41212D63FB0081762E /* PBXTargetDependency */,
+			);
+			name = RotaryWheel;
+			productName = RotaryWheel;
+			productReference = 64DBD08D212A5B2D00DE1DF5 /* RotaryWheel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64DBD085212A5B2D00DE1DF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "IIT-翁禹斌(William.Weng)";
+				TargetAttributes = {
+					64BB9E3A212D63FB0081762E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					64BB9E51212D69B70081762E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					64DBD08C212A5B2D00DE1DF5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 64DBD088212A5B2D00DE1DF5 /* Build configuration list for PBXProject "RotaryWheel" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64DBD084212A5B2D00DE1DF5;
+			productRefGroup = 64DBD08E212A5B2D00DE1DF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64DBD08C212A5B2D00DE1DF5 /* RotaryWheel */,
+				64BB9E3A212D63FB0081762E /* WWRotaryWheel */,
+				64BB9E51212D69B70081762E /* WWRotaryWheel_Build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64BB9E39212D63FB0081762E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BB9E49212D647C0081762E /* WWRotaryWheel.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DBD08B212A5B2D00DE1DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DBD09B212A5B2D00DE1DF5 /* LaunchScreen.storyboard in Resources */,
+				64DBD098212A5B2D00DE1DF5 /* Assets.xcassets in Resources */,
+				64DBD096212A5B2D00DE1DF5 /* Main.storyboard in Resources */,
+				6493081E212C1674000056CF /* RotaryWheel.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64BB9E55212D69C30081762E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"WWRotaryWheel\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with a new version created by merging the device and simulator # frameworks' executables with lipo.\n\nlipo -create -output \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8 # Copy the Swift module mappings for the simulator into the # framework. The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64BB9E36212D63FB0081762E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BB9E48212D64050081762E /* WWRotaryWheel+.swift in Sources */,
+				64BB9E47212D64050081762E /* WWRotaryWheel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DBD089212A5B2D00DE1DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DBD093212A5B2D00DE1DF5 /* ViewController.swift in Sources */,
+				64DBD091212A5B2D00DE1DF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64BB9E41212D63FB0081762E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64BB9E3A212D63FB0081762E /* WWRotaryWheel */;
+			targetProxy = 64BB9E40212D63FB0081762E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64DBD094212A5B2D00DE1DF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64DBD095212A5B2D00DE1DF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64DBD099212A5B2D00DE1DF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64DBD09A212A5B2D00DE1DF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64BB9E44212D63FB0081762E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WWRotaryWheel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.william.WWRotaryWheel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64BB9E45212D63FB0081762E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WWRotaryWheel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.william.WWRotaryWheel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64BB9E53212D69B70081762E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		64BB9E54212D69B70081762E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		64DBD09D212A5B2D00DE1DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64DBD09E212A5B2D00DE1DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64DBD0A0212A5B2D00DE1DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				INFOPLIST_FILE = RotaryWheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.william.RotaryWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64DBD0A1212A5B2D00DE1DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				INFOPLIST_FILE = RotaryWheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.william.RotaryWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64BB9E46212D63FB0081762E /* Build configuration list for PBXNativeTarget "WWRotaryWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BB9E44212D63FB0081762E /* Debug */,
+				64BB9E45212D63FB0081762E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64BB9E52212D69B70081762E /* Build configuration list for PBXAggregateTarget "WWRotaryWheel_Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BB9E53212D69B70081762E /* Debug */,
+				64BB9E54212D69B70081762E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64DBD088212A5B2D00DE1DF5 /* Build configuration list for PBXProject "RotaryWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DBD09D212A5B2D00DE1DF5 /* Debug */,
+				64DBD09E212A5B2D00DE1DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64DBD09F212A5B2D00DE1DF5 /* Build configuration list for PBXNativeTarget "RotaryWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DBD0A0212A5B2D00DE1DF5 /* Debug */,
+				64DBD0A1212A5B2D00DE1DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64DBD085212A5B2D00DE1DF5 /* Project object */;
+}

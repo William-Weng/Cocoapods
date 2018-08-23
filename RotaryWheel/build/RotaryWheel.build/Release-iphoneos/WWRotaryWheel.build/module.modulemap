@@ -1,0 +1,11 @@
+framework module WWRotaryWheel {
+  umbrella header "WWRotaryWheel.h"
+
+  export *
+  module * { export * }
+}
+
+module WWRotaryWheel.Swift {
+    header "WWRotaryWheel-Swift.h"
+    requires objc
+}

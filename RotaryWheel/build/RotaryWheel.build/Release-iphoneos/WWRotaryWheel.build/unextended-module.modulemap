@@ -1,0 +1,10 @@
+framework module WWRotaryWheel {
+  umbrella header "WWRotaryWheel.h"
+
+  export *
+  module * { export * }
+}
+
+module WWRotaryWheel.__Swift {
+    exclude header "WWRotaryWheel-Swift.h"
+}

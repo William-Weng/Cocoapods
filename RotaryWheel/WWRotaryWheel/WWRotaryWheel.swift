@@ -30,6 +30,7 @@ public class WWRotaryWheel: UIView {
     @IBInspectable var rotatingShaftTextColor: UIColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
     @IBInspectable var buttonColor: UIColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
     @IBInspectable var buttonTextColor: UIColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
+    @IBInspectable var buttonTextSize: CGFloat = 24.0
     @IBInspectable var rotatingShaftWidth: CGFloat = 36.0
     @IBInspectable var shortenRadius: CGFloat = 0.0
     @IBInspectable var isVerticalWord: Bool = false
@@ -45,6 +46,7 @@ public class WWRotaryWheel: UIView {
     var wheelButtons = [UIButton]()
     var wheelLabels = [UILabel]()
     var wheelButtonsImage = [UIImage]()
+    var wheelButtonsTitle = [String]()
 
     public weak var delegate: WWRotaryWheelDelegate? = nil
     

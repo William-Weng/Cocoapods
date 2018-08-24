@@ -69,12 +69,19 @@ extension WWRotaryWheel {
         }
         
         buttonsImageSetting(images: wheelButtonsImage)
+        buttonsTitleSetting(titles: wheelButtonsTitle)
+
         delegate?.wwRotaryWheel(self, selectedItemAt: 0, for: wheelButtons)
     }
     
     /// 設定各Button的圖形
     public func imageSetting(_ images: [UIImage]) {
         wheelButtonsImage = images
+    }
+    
+    /// 設定各Button的文字
+    public func titleSetting(_ titles: [String]) {
+        wheelButtonsTitle = titles
     }
 }
 
@@ -102,6 +109,16 @@ extension WWRotaryWheel {
             for (index, image) in images.enumerated() { wheelButtons[index].setImage(image, for: .normal) }
         } else {
             for (index, button) in wheelButtons.enumerated() { button.setImage(images[index], for: .normal) }
+        }
+    }
+    
+    /// 設定各Button的文字
+    func buttonsTitleSetting(titles: [String]) {
+        
+        if wheelButtons.count > titles.count{
+            for (index, title) in titles.enumerated() { wheelButtons[index].setTitle(title, for: .normal) }
+        } else {
+            for (index, button) in wheelButtons.enumerated() { button.setTitle(titles[index], for: .normal) }
         }
     }
 }
@@ -219,6 +236,7 @@ extension WWRotaryWheel {
         wheelButton.backgroundColor = buttonColor
         wheelButton.setTitleColor(buttonTextColor, for: .normal)
         wheelButton.setTitle("\(index)", for: .normal)
+        wheelButton.titleLabel?.font = UIFont.systemFont(ofSize: buttonTextSize)
         wheelButton.addTarget(self, action: #selector(clickButton(_:)), for: .touchUpInside)
         wheelButton.layer.cornerRadius = size.width * 0.5
         wheelButton.clipsToBounds = true

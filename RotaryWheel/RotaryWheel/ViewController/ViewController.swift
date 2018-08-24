@@ -16,8 +16,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         myRotaryWheel.delegate = self
-        myRotaryWheel.imageSetting([#imageLiteral(resourceName: "list"), #imageLiteral(resourceName: "like"), #imageLiteral(resourceName: "meeting"), #imageLiteral(resourceName: "plus"), #imageLiteral(resourceName: "check-mark")])
+        // myRotaryWheel.imageSetting([#imageLiteral(resourceName: "list"), #imageLiteral(resourceName: "like"), #imageLiteral(resourceName: "meeting"), #imageLiteral(resourceName: "plus"), #imageLiteral(resourceName: "check-mark")])
+        myRotaryWheel.titleSetting(["🐶", "🐭", "👻", "🦊", "🐼"])
     }
 
     override func didReceiveMemoryWarning() {

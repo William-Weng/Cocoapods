@@ -65,30 +65,23 @@ extension WWSegmentControl {
         
         let multiple = CGFloat(abs(sender.tag - nowSelectedTag) + 1)
         
-        for button in myButtons {
-            button.isEnabled = true
-            button.setTitleColor(disableTextColor, for: .normal)
-        }
-        
-        sender.setTitleColor(enableTextColor, for: .normal)
+        buttonsStatusSetting(false)
+        buttonsColorSetting(with: sender)
         
         animator = UIViewPropertyAnimator.init(duration: 0.3, dampingRatio: 1, animations: {
             self.stretchMoveUIView(with: multiple, size: sender.frame.size)
         })
         
         animator?.addAnimations({
-            
-            if sender.tag > self.nowSelectedTag {
-                self.changeMoveUIViewCenter(to: myButtons[self.nowSelectedTag])
-            } else {
-                self.changeMoveUIViewCenter(to: myButtons[sender.tag])
-            }
+            let nowTag = (sender.tag > self.nowSelectedTag) ? self.nowSelectedTag : sender.tag
+            self.changeMoveUIViewCenter(to: myButtons[nowTag])
         })
         
         animator?.addCompletion({ _ in
             _ = UIViewPropertyAnimator.init(duration: 0.3, dampingRatio: 0.7, animations: {
                 self.revertMoveUIViewSize(to: sender)
                 self.nowSelectedTag = sender.tag
+                self.buttonsStatusSetting(true)
                 self.delegate?.wwSegmentControl(self, selectedItemAt: self.nowSelectedTag, for: sender)
             }).startAnimation()
         })
@@ -96,6 +89,7 @@ extension WWSegmentControl {
         animator?.startAnimation()
     }
 }
+
 
 extension WWSegmentControl {
     
@@ -207,5 +201,23 @@ extension WWSegmentControl {
         moveUIView.center = button.center
         moveUIView.layer.cornerRadius = radius
         moveUIViewLeading = moveUIViewLeading.setSecondItem(button)
+    }
+    
+    /// 設定各Button的狀態
+    func buttonsStatusSetting(_ status: Bool) {
+        guard let myButtons = baseSegmentView.arrangedSubviews as? [UIButton] else { return }
+        for button in myButtons { button.isEnabled = status }
+    }
+    
+    /// 設定各按鈕的文字顏色
+    func buttonsColorSetting(with sender: UIButton) {
+        
+        guard let myButtons = baseSegmentView.arrangedSubviews as? [UIButton] else { return }
+        
+        for button in myButtons {
+            button.setTitleColor(disableTextColor, for: .normal)
+        }
+        
+        sender.setTitleColor(enableTextColor, for: .normal)
     }
 }

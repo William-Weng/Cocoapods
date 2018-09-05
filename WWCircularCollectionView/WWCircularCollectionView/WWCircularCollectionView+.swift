@@ -86,7 +86,7 @@ extension WWCircularCollectionView {
         return contentOffsetCenter
     }
     
-    /// 無限旋轉的設定 (讓旋轉的範圍介於 => 第二列的開頭 ~ θ ~ 第三列的開頭)
+    /// 無限旋轉的設定 (讓旋轉的範圍介於 => 第二列的開頭 ~ θ ~ 第三列的開頭 => contentOffset.x要整數才準確，不然會一直叫scrollViewDidScroll)
     func infinityScrollSetting(_ scrollView: UIScrollView, isInfinity: Bool) {
         
         if !isInfinity { return }
@@ -94,11 +94,11 @@ extension WWCircularCollectionView {
         let centerWidth: InfinityContentOffset = (0, middleContentOffset.x, middleContentOffset.x * 2)
         
         if (scrollView.contentOffset.x <= centerWidth.middle) {
-            scrollView.contentOffset.x = centerWidth.end; return
+            scrollView.contentOffset.x = floor(centerWidth.end); return
         }
         
-        if (scrollView.contentOffset.x > centerWidth.end) {
-            scrollView.contentOffset.x = centerWidth.middle; return
+        if (scrollView.contentOffset.x >= centerWidth.end) {
+            scrollView.contentOffset.x = ceil(centerWidth.middle); return
         }
     }
     

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lastLabel: UILabel!
     @IBOutlet weak var collectionView: WWCircularCollectionView!
     
-    let isInfinity = false
+    let isInfinity = true
     
     override func viewDidLoad() {
         super.viewDidLoad()

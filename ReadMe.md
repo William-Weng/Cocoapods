@@ -14,3 +14,9 @@
 [![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWCircularCollectionView.svg?style=flat)](http://cocoapods.org/pods/WWCircularCollectionView) [![Platform](https://img.shields.io/cocoapods/p/WWCircularCollectionView.svg?style=flat)](http://cocoapods.org/pods/WWCircularCollectionView) [![License](https://img.shields.io/cocoapods/l/WWCircularCollectionView.svg?style=flat)](http://cocoapods.org/pods/WWCircularCollectionView)
 
 ![一個自訂的CircularCollectionView (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWCircularCollectionView/master/WWCircularCollectionView.gif)
+
+# [WWMenuView - 一個自訂的側邊選單](https://cocoapods.org/pods/WWMenuView)
+
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWMenuView.svg?style=flat)](http://cocoapods.org/pods/WWMenuView) [![Platform](https://img.shields.io/cocoapods/p/WWMenuView.svg?style=flat)](http://cocoapods.org/pods/WWMenuView) [![License](https://img.shields.io/cocoapods/l/WWMenuView.svg?style=flat)](http://cocoapods.org/pods/WWMenuView)
+
+![一個自訂的側邊選單 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWMenuView/master/WWMenuView.gif)

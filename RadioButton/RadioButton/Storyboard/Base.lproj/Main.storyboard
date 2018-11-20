@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RadioButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xgb-w9-52V">
+                                <rect key="frame" x="0.0" y="42" width="60" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyU-17-C5t" customClass="WWRadioButton" customModule="WWRadioButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="66.5"/>
+                                        <state key="normal">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="like_1"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="noneSelectedImage" value="like_2"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titlePosition">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSelectedStatus" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="groupIdentifier" value="Like"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Gs-ez-zCh"/>
+                                            <outletCollection property="groupButtons" destination="bk6-Yr-dTd" collectionClass="NSMutableArray" id="7KJ-RF-Xd5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URj-T2-50T" customClass="WWRadioButton" customModule="WWRadioButton">
+                                        <rect key="frame" x="0.0" y="66.5" width="60" height="67"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="like_1"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="noneSelectedImage" value="like_2"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSelectedStatus" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titlePosition">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="groupIdentifier" value="Like"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHr-vU-UVw"/>
+                                            <outletCollection property="groupButtons" destination="OyU-17-C5t" collectionClass="NSMutableArray" id="XOZ-Tw-a42"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bk6-Yr-dTd" customClass="WWRadioButton" customModule="WWRadioButton">
+                                        <rect key="frame" x="0.0" y="133.5" width="60" height="66.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="like_1"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="noneSelectedImage" value="like_2"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titlePosition">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="groupIdentifier" value="Like"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYZ-uS-ZVA"/>
+                                            <outletCollection property="groupButtons" destination="URj-T2-50T" collectionClass="NSMutableArray" id="0Iu-jy-f3a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DYX-1q-ClM"/>
+                                    <constraint firstAttribute="width" constant="60" id="QKC-V1-YY4"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Cv4-QV-U8a">
+                                <rect key="frame" x="68" y="42" width="236" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="喜歡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UD-pT-GXh">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="66.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="很喜歡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzX-jC-Jgk">
+                                        <rect key="frame" x="0.0" y="66.5" width="236" height="67"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="非常喜歡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNO-g8-fHH">
+                                        <rect key="frame" x="0.0" y="133.5" width="236" height="66.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nir-R2-hE9">
+                                <rect key="frame" x="0.0" y="371" width="320" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmo-ED-K6g" customClass="WWRadioButton" customModule="WWRadioButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="110"/>
+                                        <state key="normal" title="好">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="star_1"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="noneSelectedImage" value="star_2"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSelectedStatus" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="groupIdentifier" value="Star"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfb-Pb-yBt"/>
+                                            <outletCollection property="groupButtons" destination="omk-oB-owA" collectionClass="NSMutableArray" id="agm-24-rB3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-Oj-EwM" customClass="WWRadioButton" customModule="WWRadioButton">
+                                        <rect key="frame" x="106.5" y="0.0" width="107" height="110"/>
+                                        <state key="normal" title="很好">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="star_1"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="noneSelectedImage" value="star_2"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="groupIdentifier" value="Star"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfv-YQ-BbK"/>
+                                            <outletCollection property="groupButtons" destination="Kmo-ED-K6g" collectionClass="NSMutableArray" id="XU9-HD-Thb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omk-oB-owA" customClass="WWRadioButton" customModule="WWRadioButton">
+                                        <rect key="frame" x="213.5" y="0.0" width="106.5" height="110"/>
+                                        <state key="normal" title="非常好">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="star_1"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="noneSelectedImage" value="star_2"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="groupIdentifier" value="Star"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLP-zA-fLt"/>
+                                            <outletCollection property="groupButtons" destination="Ges-Oj-EwM" collectionClass="NSMutableArray" id="tCv-QH-40o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="3Qx-Yl-3sx"/>
+                                    <constraint firstAttribute="height" constant="110" id="Jpc-JK-27P"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nir-R2-hE9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Tm-Rx-FIb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nir-R2-hE9" secondAttribute="trailing" id="HQ8-bO-WQh"/>
+                            <constraint firstItem="Cv4-QV-U8a" firstAttribute="height" secondItem="xgb-w9-52V" secondAttribute="height" id="JCn-BH-6v2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cv4-QV-U8a" secondAttribute="trailing" constant="16" id="Na8-0r-2wK"/>
+                            <constraint firstItem="Cv4-QV-U8a" firstAttribute="leading" secondItem="xgb-w9-52V" secondAttribute="trailing" constant="8" id="ONZ-uQ-8ua"/>
+                            <constraint firstItem="Cv4-QV-U8a" firstAttribute="top" secondItem="xgb-w9-52V" secondAttribute="top" id="rnT-PI-gmb"/>
+                            <constraint firstItem="xgb-w9-52V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tD0-Xk-GvG"/>
+                            <constraint firstItem="Nir-R2-hE9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="xqp-hp-Td8"/>
+                            <constraint firstItem="xgb-w9-52V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="y1Z-Vp-lIc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="like_1" width="32" height="32"/>
+        <image name="like_2" width="32" height="32"/>
+        <image name="star_1" width="32" height="32"/>
+        <image name="star_2" width="32" height="32"/>
+    </resources>
+</document>

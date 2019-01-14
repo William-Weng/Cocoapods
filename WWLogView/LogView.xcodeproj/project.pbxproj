@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		64AC259B21EC75DE0030F015 /* WWLogView_Build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 64AC259C21EC75DE0030F015 /* Build configuration list for PBXAggregateTarget "WWLogView_Build" */;
+			buildPhases = (
+				64AC259F21EC75ED0030F015 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = WWLogView_Build;
+			productName = WWLogView_Build;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		64731F2221E894AE00DA6D40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64731F2121E894AE00DA6D40 /* AppDelegate.swift */; };
+		64731F2421E894AE00DA6D40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64731F2321E894AE00DA6D40 /* ViewController.swift */; };
+		64731F2721E894AE00DA6D40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64731F2521E894AE00DA6D40 /* Main.storyboard */; };
+		64731F2921E894AF00DA6D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64731F2821E894AF00DA6D40 /* Assets.xcassets */; };
+		64731F2C21E894AF00DA6D40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64731F2A21E894AF00DA6D40 /* LaunchScreen.storyboard */; };
+		64AC258C21EC6F860030F015 /* WWLogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64AC258A21EC6F860030F015 /* WWLogView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64AC258F21EC6F860030F015 /* WWLogView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AC258821EC6F860030F015 /* WWLogView.framework */; };
+		64AC259021EC6F860030F015 /* WWLogView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64AC258821EC6F860030F015 /* WWLogView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64AC259421EC6FF50030F015 /* WWLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64731F3521E8993400DA6D40 /* WWLogViewController.swift */; };
+		64AC259521EC6FF50030F015 /* WWLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC255D21EC3C2D0030F015 /* WWLogView.swift */; };
+		64AC259621EC703F0030F015 /* WWLogView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64731F3321E898F800DA6D40 /* WWLogView.storyboard */; };
+		64AC259721EC71BF0030F015 /* WWLogView.storyboard in Headers */ = {isa = PBXBuildFile; fileRef = 64731F3321E898F800DA6D40 /* WWLogView.storyboard */; settings = {ATTRIBUTES = (Public, ); }; };
+		64AC259821EC71C80030F015 /* WWLogViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 64731F3521E8993400DA6D40 /* WWLogViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		64AC259A21EC72870030F015 /* WWLogView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AC259921EC72870030F015 /* WWLogView.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64AC258D21EC6F860030F015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64731F1621E894AE00DA6D40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64AC258721EC6F860030F015;
+			remoteInfo = WWLogView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64AC257021EC69590030F015 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64AC259021EC6F860030F015 /* WWLogView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		64731F1E21E894AE00DA6D40 /* LogView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64731F2121E894AE00DA6D40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64731F2321E894AE00DA6D40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64731F2621E894AE00DA6D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64731F2821E894AF00DA6D40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64731F2B21E894AF00DA6D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64731F2D21E894AF00DA6D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64731F3321E898F800DA6D40 /* WWLogView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WWLogView.storyboard; sourceTree = "<group>"; };
+		64731F3521E8993400DA6D40 /* WWLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLogViewController.swift; sourceTree = "<group>"; };
+		64AC255D21EC3C2D0030F015 /* WWLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLogView.swift; sourceTree = "<group>"; };
+		64AC258821EC6F860030F015 /* WWLogView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWLogView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64AC258A21EC6F860030F015 /* WWLogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWLogView.h; sourceTree = "<group>"; };
+		64AC258B21EC6F860030F015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64AC259921EC72870030F015 /* WWLogView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WWLogView.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64731F1B21E894AE00DA6D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AC258F21EC6F860030F015 /* WWLogView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64AC258521EC6F860030F015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64731F1521E894AE00DA6D40 = {
+			isa = PBXGroup;
+			children = (
+				64731F2021E894AE00DA6D40 /* LogView */,
+				64AC258921EC6F860030F015 /* WWLogView */,
+				64731F1F21E894AE00DA6D40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64731F1F21E894AE00DA6D40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64731F1E21E894AE00DA6D40 /* LogView.app */,
+				64AC258821EC6F860030F015 /* WWLogView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64731F2021E894AE00DA6D40 /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				64AC25A321EC764E0030F015 /* Setting */,
+				64AC25A021EC761A0030F015 /* Matelial */,
+				64AC25A221EC763E0030F015 /* Storyboard */,
+				64AC25A121EC76300030F015 /* ViewController */,
+				64731F2121E894AE00DA6D40 /* AppDelegate.swift */,
+			);
+			path = LogView;
+			sourceTree = "<group>";
+		};
+		64AC258921EC6F860030F015 /* WWLogView */ = {
+			isa = PBXGroup;
+			children = (
+				64AC258A21EC6F860030F015 /* WWLogView.h */,
+				64AC255D21EC3C2D0030F015 /* WWLogView.swift */,
+				64731F3521E8993400DA6D40 /* WWLogViewController.swift */,
+				64731F3321E898F800DA6D40 /* WWLogView.storyboard */,
+				64AC258B21EC6F860030F015 /* Info.plist */,
+				64AC259921EC72870030F015 /* WWLogView.xcassets */,
+			);
+			path = WWLogView;
+			sourceTree = "<group>";
+		};
+		64AC25A021EC761A0030F015 /* Matelial */ = {
+			isa = PBXGroup;
+			children = (
+				64731F2821E894AF00DA6D40 /* Assets.xcassets */,
+			);
+			path = Matelial;
+			sourceTree = "<group>";
+		};
+		64AC25A121EC76300030F015 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64731F2321E894AE00DA6D40 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		64AC25A221EC763E0030F015 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				64731F2A21E894AF00DA6D40 /* LaunchScreen.storyboard */,
+				64731F2521E894AE00DA6D40 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		64AC25A321EC764E0030F015 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				64731F2D21E894AF00DA6D40 /* Info.plist */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		64AC258321EC6F860030F015 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AC258C21EC6F860030F015 /* WWLogView.h in Headers */,
+				64AC259721EC71BF0030F015 /* WWLogView.storyboard in Headers */,
+				64AC259821EC71C80030F015 /* WWLogViewController.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		64731F1D21E894AE00DA6D40 /* LogView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64731F3021E894AF00DA6D40 /* Build configuration list for PBXNativeTarget "LogView" */;
+			buildPhases = (
+				64731F1A21E894AE00DA6D40 /* Sources */,
+				64731F1B21E894AE00DA6D40 /* Frameworks */,
+				64731F1C21E894AE00DA6D40 /* Resources */,
+				64AC257021EC69590030F015 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64AC258E21EC6F860030F015 /* PBXTargetDependency */,
+			);
+			name = LogView;
+			productName = UIWindow_Demo;
+			productReference = 64731F1E21E894AE00DA6D40 /* LogView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64AC258721EC6F860030F015 /* WWLogView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64AC259121EC6F860030F015 /* Build configuration list for PBXNativeTarget "WWLogView" */;
+			buildPhases = (
+				64AC258321EC6F860030F015 /* Headers */,
+				64AC258421EC6F860030F015 /* Sources */,
+				64AC258521EC6F860030F015 /* Frameworks */,
+				64AC258621EC6F860030F015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWLogView;
+			productName = WWLogView;
+			productReference = 64AC258821EC6F860030F015 /* WWLogView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64731F1621E894AE00DA6D40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "IIT-翁禹斌(William.Weng)";
+				TargetAttributes = {
+					64731F1D21E894AE00DA6D40 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					64AC258721EC6F860030F015 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					64AC259B21EC75DE0030F015 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 64731F1921E894AE00DA6D40 /* Build configuration list for PBXProject "LogView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64731F1521E894AE00DA6D40;
+			productRefGroup = 64731F1F21E894AE00DA6D40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64731F1D21E894AE00DA6D40 /* LogView */,
+				64AC258721EC6F860030F015 /* WWLogView */,
+				64AC259B21EC75DE0030F015 /* WWLogView_Build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64731F1C21E894AE00DA6D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64731F2C21E894AF00DA6D40 /* LaunchScreen.storyboard in Resources */,
+				64731F2921E894AF00DA6D40 /* Assets.xcassets in Resources */,
+				64731F2721E894AE00DA6D40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64AC258621EC6F860030F015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AC259621EC703F0030F015 /* WWLogView.storyboard in Resources */,
+				64AC259A21EC72870030F015 /* WWLogView.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64AC259F21EC75ED0030F015 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"WWLogView\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with a new version created by merging the device and simulator # frameworks' executables with lipo.\n\nlipo -create -output \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8 # Copy the Swift module mappings for the simulator into the # framework. The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64731F1A21E894AE00DA6D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64731F2421E894AE00DA6D40 /* ViewController.swift in Sources */,
+				64731F2221E894AE00DA6D40 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64AC258421EC6F860030F015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AC259421EC6FF50030F015 /* WWLogViewController.swift in Sources */,
+				64AC259521EC6FF50030F015 /* WWLogView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64AC258E21EC6F860030F015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64AC258721EC6F860030F015 /* WWLogView */;
+			targetProxy = 64AC258D21EC6F860030F015 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64731F2521E894AE00DA6D40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64731F2621E894AE00DA6D40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64731F2A21E894AF00DA6D40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64731F2B21E894AF00DA6D40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64731F2E21E894AF00DA6D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64731F2F21E894AF00DA6D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64731F3121E894AF00DA6D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				INFOPLIST_FILE = "$(SRCROOT)/LogView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tw.idv.william.UIWindow-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64731F3221E894AF00DA6D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				INFOPLIST_FILE = "$(SRCROOT)/LogView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tw.idv.william.UIWindow-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64AC259221EC6F860030F015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WWLogView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.william.WWLogView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64AC259321EC6F860030F015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WWLogView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.william.WWLogView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64AC259D21EC75DE0030F015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		64AC259E21EC75DE0030F015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXE4438K84;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64731F1921E894AE00DA6D40 /* Build configuration list for PBXProject "LogView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64731F2E21E894AF00DA6D40 /* Debug */,
+				64731F2F21E894AF00DA6D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64731F3021E894AF00DA6D40 /* Build configuration list for PBXNativeTarget "LogView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64731F3121E894AF00DA6D40 /* Debug */,
+				64731F3221E894AF00DA6D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64AC259121EC6F860030F015 /* Build configuration list for PBXNativeTarget "WWLogView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64AC259221EC6F860030F015 /* Debug */,
+				64AC259321EC6F860030F015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64AC259C21EC75DE0030F015 /* Build configuration list for PBXAggregateTarget "WWLogView_Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64AC259D21EC75DE0030F015 /* Debug */,
+				64AC259E21EC75DE0030F015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64731F1621E894AE00DA6D40 /* Project object */;
+}

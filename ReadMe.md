@@ -26,3 +26,12 @@
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWRadioButton.svg?style=flat)](http://cocoapods.org/pods/WWRadioButton) [![Platform](https://img.shields.io/cocoapods/p/WWRadioButton.svg?style=flat)](http://cocoapods.org/pods/WWRadioButton) [![License](https://img.shields.io/cocoapods/l/WWRadioButton.svg?style=flat)](http://cocoapods.org/pods/WWRadioButton)
 
 ![一個自訂的單選按鈕 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWRadioButton/master/WWRadioButton.gif)
+
+# [WWLogView - 一個簡單的Log視窗版 (上傳至Cocoapods)](http://cocoapods.org/pods/WWLogView)
+
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWLogView.svg?style=flat)](http://cocoapods.org/pods/WWLogView) [![Platform](https://img.shields.io/cocoapods/p/WWLogView.svg?style=flat)](http://cocoapods.org/pods/WWLogView) [![License](https://img.shields.io/cocoapods/l/WWLogView.svg?style=flat)](http://cocoapods.org/pods/WWLogView)
+
+![一個簡單的Log視窗版 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWLogView/master/WWLogView.gif)
+
+
+

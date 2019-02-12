@@ -5,6 +5,7 @@
 //  Created by William-Weng on 2019/2/11.
 //  Copyright © 2019年 William-Weng. All rights reserved.
 //
+/// [Swift:Add Ripple effect to a view](https://medium.com/@anoopm6/swift-add-ripple-effect-to-a-view-7b16af3da4f)
 
 import UIKit
 

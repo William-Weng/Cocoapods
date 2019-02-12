@@ -27,15 +27,15 @@
 
 ![一個自訂的單選按鈕 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWRadioButton/master/WWRadioButton.gif)
 
-# [WWLogView - 一個簡單的Log視窗版 (上傳至Cocoapods)](http://cocoapods.org/pods/WWLogView)
+# [WWLogView - 一個簡單的Log視窗版](http://cocoapods.org/pods/WWLogView)
 
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWLogView.svg?style=flat)](http://cocoapods.org/pods/WWLogView) [![Platform](https://img.shields.io/cocoapods/p/WWLogView.svg?style=flat)](http://cocoapods.org/pods/WWLogView) [![License](https://img.shields.io/cocoapods/l/WWLogView.svg?style=flat)](http://cocoapods.org/pods/WWLogView)
 
 ![一個簡單的Log視窗版 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWLogView/master/WWLogView.gif)
 
-# [WWRippleEffect - 一個簡單的點擊波紋效果 (上傳至Cocoapods)](http://cocoapods.org/pods/WWRippleEffect)
+# [WWRippleEffect - 一個簡單的點擊波紋效果](http://cocoapods.org/pods/WWRippleEffect)
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWRippleEffect.svg?style=flat)](http://cocoapods.org/pods/WWRippleEffect) [![Platform](https://img.shields.io/cocoapods/p/WWRippleEffect.svg?style=flat)](http://cocoapods.org/pods/WWRippleEffect) [![License](https://img.shields.io/cocoapods/l/WWRippleEffect.svg?style=flat)](http://cocoapods.org/pods/WWRippleEffect)
 
-![WWRippleEffect - 一個簡單的點擊波紋效果 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWRippleEffect/master/WWRippleEffect.gif)
+![WWRippleEffect - 一個簡單的點擊波紋效果](https://raw.githubusercontent.com/William-Weng/WWRippleEffect/master/WWRippleEffect.gif)
 
 

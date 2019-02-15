@@ -38,4 +38,7 @@
 
 ![WWRippleEffect - 一個簡單的點擊波紋效果](https://raw.githubusercontent.com/William-Weng/WWRippleEffect/master/WWRippleEffect.gif)
 
+# [WWTouchIdTesting - 使用TouchID / FaceID的功能封裝](http://cocoapods.org/pods/WWTouchIdTesting)
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWSegmentControl.svg?style=flat)](http://cocoapods.org/pods/WWTouchIdTesting) [![Platform](https://img.shields.io/cocoapods/p/WWSegmentControl.svg?style=flat)](http://cocoapods.org/pods/WWTouchIdTesting) [![License](https://img.shields.io/cocoapods/l/WWSegmentControl.svg?style=flat)](http://cocoapods.org/pods/WWTouchIdTesting)
 
+![使用TouchID / FaceID的功能封裝 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWTouchIdTesting/master/WWTouchIdTesting.gif)

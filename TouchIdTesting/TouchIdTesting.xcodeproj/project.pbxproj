@@ -123,9 +123,9 @@
 		64D54034221665BF0002502D /* WWTouchIdTesting */ = {
 			isa = PBXGroup;
 			children = (
+				64D54036221665BF0002502D /* Info.plist */,
 				64D54035221665BF0002502D /* WWTouchIdTesting.h */,
 				64D54040221665CA0002502D /* WWTouchIdTesting.swift */,
-				64D54036221665BF0002502D /* Info.plist */,
 			);
 			path = WWTouchIdTesting;
 			sourceTree = "<group>";
@@ -521,6 +521,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.william.WWTouchIdTesting;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

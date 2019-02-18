@@ -13,9 +13,7 @@ import LocalAuthentication
 
 /// MARK: - 功能
 open class WWTouchIdTesting {
-    
-    private let myLocalizedReasonString = "ID辨識測試"
-    
+
     /// 物理檢測的類型
     public enum BiometryType : Int {
         case none
@@ -53,7 +51,7 @@ open class WWTouchIdTesting {
         
         let myContext = LAContext()
         
-        myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (isOK, error) in
+        myContext.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { (isOK, error) in
             if isOK {
                 result(.success(isOK))
             } else {
@@ -76,7 +74,7 @@ extension WWTouchIdTesting {
         let myContext = LAContext()
         var authError: NSError?
         
-        if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+        if myContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &authError) {
             
             var myBiometryType = BiometryType.none
             
@@ -109,7 +107,7 @@ extension WWTouchIdTesting {
     
     /// 開始iPhone有TouchID的版本
     static private func canUseTouchID() -> Bool {
-        if #available(iOS 8.0, macOS 10.12.1, *) { return true }
+        if #available(iOS 8.0, *) { return true }
         return false
     }
 }

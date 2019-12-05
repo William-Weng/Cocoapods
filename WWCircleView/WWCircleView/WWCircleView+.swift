@@ -26,6 +26,11 @@ extension WWCircleView {
         shapeLayerDrawing()
         animateCAShapeLayerDrawing()
     }
+    
+    /// 相關設定
+    public func setting(animationDuration: TimeInterval) {
+        self.animationDuration = animationDuration
+    }
 }
 
 /// MARK: 主功能

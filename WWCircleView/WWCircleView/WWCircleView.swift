@@ -12,12 +12,12 @@ import UIKit
 
     @IBOutlet var contentView: UIView!
 
+    @IBInspectable var animationDuration: Double = 1.0
+    
     @IBInspectable var lineWidth: CGFloat = 10.0
     @IBInspectable var percent: CGFloat = 0.0
     @IBInspectable var startAngle: Double = 0
     
-    @IBInspectable var animationDuration: Double = 1.0
-
     @IBInspectable var baseLineColor: UIColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     @IBInspectable var drawLineColor: UIColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
 

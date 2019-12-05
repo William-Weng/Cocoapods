@@ -42,3 +42,8 @@
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWSegmentControl.svg?style=flat)](http://cocoapods.org/pods/WWTouchIdTesting) [![Platform](https://img.shields.io/cocoapods/p/WWSegmentControl.svg?style=flat)](http://cocoapods.org/pods/WWTouchIdTesting) [![License](https://img.shields.io/cocoapods/l/WWSegmentControl.svg?style=flat)](http://cocoapods.org/pods/WWTouchIdTesting)
 
 ![使用TouchID / FaceID的功能封裝 (上傳至Cocoapods)](https://raw.githubusercontent.com/William-Weng/WWTouchIdTesting/master/WWTouchIdTesting.gif)
+
+# [WWCircleView - 圓形的進度條](http://cocoapods.org/pods/WWCircleView)
+[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Version](https://img.shields.io/cocoapods/v/WWCircleView.svg?style=flat)](http://cocoapods.org/pods/WWCircleView) [![Platform](https://img.shields.io/cocoapods/p/WWCircleView.svg?style=flat)](http://cocoapods.org/pods/WWCircleView) [![License](https://img.shields.io/cocoapods/l/WWCircleView.svg?style=flat)](http://cocoapods.org/pods/WWCircleView)
+
+![WWCircleView - 圓形的進度條](https://raw.githubusercontent.com/William-Weng/WWCircleView/master/WWCircleView.gif)

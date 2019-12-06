@@ -12,7 +12,14 @@ import UIKit
 
 // MARK: - 有金額上加動畫的UILabel
 open class WWAnimationLabel: UILabel {
-        
+
+    /// 數值類型 (金額 / 百分比 / 數字)
+    public enum NumberType {
+        case money(currencyCode: String)
+        case persent
+        case number
+    }
+    
     var timer: CADisplayLink?
     
     var startNumber: TimeInterval = 10
@@ -24,7 +31,7 @@ open class WWAnimationLabel: UILabel {
     var progressTime: TimeInterval = 0
     var progressNumber: TimeInterval = 0
     
-    var currencyCode = "HKD"
+    var numberType: NumberType = .number    
 }
 
 

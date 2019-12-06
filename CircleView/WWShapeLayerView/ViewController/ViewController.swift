@@ -12,21 +12,30 @@ import WWCircleView
 final class ViewController: UIViewController {
 
     @IBOutlet weak var circleView: WWCircleView!
-    @IBOutlet weak var animationLabel: WWAnimationLabel!
-
+    @IBOutlet weak var lineView: WWLineView!
+    @IBOutlet weak var nomeyLabel: WWAnimationLabel!
+    @IBOutlet weak var persentLabel: WWAnimationLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func changeValue(_ sender: UISlider) {
     
-        let animationDuration: TimeInterval = 5
+        let animationDuration: TimeInterval = 1.5
+        let rate = CGFloat(sender.value)
         
         circleView.setting(animationDuration: animationDuration)
-        circleView.drawing(with: CGFloat(sender.value))
+        circleView.drawing(with: rate)
         
-        animationLabel.setting(startNumber: 100, endNumber: 10000, animationDuration: animationDuration, currencyCode: "HKD")
-        animationLabel.running()
+        nomeyLabel.setting(startNumber: 1, endNumber: 12345678, animationDuration: animationDuration, numberType: .money(currencyCode: "HKD"))
+        nomeyLabel.running()
+        
+        lineView.setting(animationDuration: animationDuration)
+        lineView.drawing(with: rate)
+        
+        persentLabel.setting(startNumber: 1, endNumber: TimeInterval(rate), animationDuration: animationDuration, numberType: .persent)
+        persentLabel.running()
     }
 }
 

@@ -25,6 +25,10 @@
 		648AF3D22399059500F4DB5C /* WWAnimationLabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648AF3D12399059500F4DB5C /* WWAnimationLabel+.swift */; };
 		648AF3D42399065500F4DB5C /* WWAnimationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648AF3CE2398FFEC00F4DB5C /* WWAnimationLabel.swift */; };
 		648AF3D5239906AA00F4DB5C /* WWAnimationLabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 648AF3CE2398FFEC00F4DB5C /* WWAnimationLabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		6493C04E239A200E00DA4ABF /* WWLineView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6493C04D239A200E00DA4ABF /* WWLineView+.swift */; };
+		6493C04F239A2FFB00DA4ABF /* WWLineView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 64D89AC52399EF0300E4BA45 /* WWLineView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		64D89AC62399EF0300E4BA45 /* WWLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D89AC52399EF0300E4BA45 /* WWLineView.swift */; };
+		64D89ACD2399F22800E4BA45 /* WWLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64D89ACC2399F22800E4BA45 /* WWLineView.xib */; };
 		64D9D0D223977E01005F1344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9D0D123977E01005F1344 /* AppDelegate.swift */; };
 		64D9D0D423977E01005F1344 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9D0D323977E01005F1344 /* SceneDelegate.swift */; };
 		64D9D0D623977E01005F1344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9D0D523977E01005F1344 /* ViewController.swift */; };
@@ -66,6 +70,9 @@
 		645786CA2397A9450041E4D5 /* WWCircleView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WWCircleView+.swift"; sourceTree = "<group>"; };
 		648AF3CE2398FFEC00F4DB5C /* WWAnimationLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWAnimationLabel.swift; sourceTree = "<group>"; };
 		648AF3D12399059500F4DB5C /* WWAnimationLabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WWAnimationLabel+.swift"; sourceTree = "<group>"; };
+		6493C04D239A200E00DA4ABF /* WWLineView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WWLineView+.swift"; sourceTree = "<group>"; };
+		64D89AC52399EF0300E4BA45 /* WWLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLineView.swift; sourceTree = "<group>"; };
+		64D89ACC2399F22800E4BA45 /* WWLineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WWLineView.xib; sourceTree = "<group>"; };
 		64D9D0CE23977E01005F1344 /* WWShapeLayerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWShapeLayerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D9D0D123977E01005F1344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64D9D0D323977E01005F1344 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +106,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64D89AC92399F00B00E4BA45 /* WWCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				64D9D0F6239786F7005F1344 /* WWCircleView.swift */,
+				645786CA2397A9450041E4D5 /* WWCircleView+.swift */,
+				64D9D0F4239786E7005F1344 /* WWCircleView.xib */,
+			);
+			path = WWCircleView;
+			sourceTree = "<group>";
+		};
+		64D89ACA2399F05700E4BA45 /* WWLineView */ = {
+			isa = PBXGroup;
+			children = (
+				64D89AC52399EF0300E4BA45 /* WWLineView.swift */,
+				6493C04D239A200E00DA4ABF /* WWLineView+.swift */,
+				64D89ACC2399F22800E4BA45 /* WWLineView.xib */,
+			);
+			path = WWLineView;
+			sourceTree = "<group>";
+		};
+		64D89ACB2399F06B00E4BA45 /* WWAnimationLabel */ = {
+			isa = PBXGroup;
+			children = (
+				648AF3CE2398FFEC00F4DB5C /* WWAnimationLabel.swift */,
+				648AF3D12399059500F4DB5C /* WWAnimationLabel+.swift */,
+			);
+			path = WWAnimationLabel;
+			sourceTree = "<group>";
+		};
 		64D9D0C523977E01005F1344 = {
 			isa = PBXGroup;
 			children = (
@@ -167,12 +203,10 @@
 		64F76D7D23979B4100107E49 /* WWCircleView */ = {
 			isa = PBXGroup;
 			children = (
+				64D89AC92399F00B00E4BA45 /* WWCircleView */,
+				64D89ACB2399F06B00E4BA45 /* WWAnimationLabel */,
+				64D89ACA2399F05700E4BA45 /* WWLineView */,
 				64F76D7E23979B4100107E49 /* WWCircleView.h */,
-				64D9D0F6239786F7005F1344 /* WWCircleView.swift */,
-				645786CA2397A9450041E4D5 /* WWCircleView+.swift */,
-				648AF3CE2398FFEC00F4DB5C /* WWAnimationLabel.swift */,
-				648AF3D12399059500F4DB5C /* WWAnimationLabel+.swift */,
-				64D9D0F4239786E7005F1344 /* WWCircleView.xib */,
 				64F76D7F23979B4100107E49 /* Info.plist */,
 			);
 			path = WWCircleView;
@@ -195,6 +229,7 @@
 				64F76D8023979B4100107E49 /* WWCircleView.h in Headers */,
 				64F76D8B23979CD200107E49 /* WWCircleView.swift in Headers */,
 				648AF3D5239906AA00F4DB5C /* WWAnimationLabel.swift in Headers */,
+				6493C04F239A2FFB00DA4ABF /* WWLineView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D89ACD2399F22800E4BA45 /* WWLineView.xib in Resources */,
 				64F76D8A23979B5700107E49 /* WWCircleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,10 +371,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6493C04E239A200E00DA4ABF /* WWLineView+.swift in Sources */,
 				645786CB2397A9450041E4D5 /* WWCircleView+.swift in Sources */,
 				64F76D8923979B4B00107E49 /* WWCircleView.swift in Sources */,
 				648AF3D22399059500F4DB5C /* WWAnimationLabel+.swift in Sources */,
 				648AF3D42399065500F4DB5C /* WWAnimationLabel.swift in Sources */,
+				64D89AC62399EF0300E4BA45 /* WWLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

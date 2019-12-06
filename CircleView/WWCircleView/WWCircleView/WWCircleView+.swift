@@ -33,7 +33,7 @@ extension WWCircleView {
     }
 }
 
-/// MARK: 主功能
+/// MARK: 主工具
 extension WWCircleView {
     
     /// 載入XIB的一些基本設定
@@ -47,7 +47,7 @@ extension WWCircleView {
         addSubview(contentView)
     }
 
-    /// 基本設定 (圓形)
+    /// 基本設定 (底圖)
     func layerSetting(with rect: CGRect) {
         
         parameter.radius = (rect.width > rect.height) ? rect.height * 0.5 : rect.width  * 0.5
@@ -122,7 +122,7 @@ extension WWCircleView {
         case 0..<100:
             return percent / 100.0
         case 100...:
-            return 100
+            return 1.0
         default:
             return 0.0
         }

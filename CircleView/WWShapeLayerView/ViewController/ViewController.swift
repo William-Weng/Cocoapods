@@ -13,13 +13,13 @@ final class ViewController: UIViewController {
 
     @IBOutlet weak var circleView: WWCircleView!
     @IBOutlet weak var animationLabel: WWAnimationLabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func changeValue(_ sender: UISlider) {
-        
+    
         let animationDuration: TimeInterval = 5
         
         circleView.setting(animationDuration: animationDuration)

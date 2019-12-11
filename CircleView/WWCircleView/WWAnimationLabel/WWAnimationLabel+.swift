@@ -79,7 +79,7 @@ extension WWAnimationLabel {
         
         switch type {
         case .number: return "\(number)"
-        case .persent: return persentFormat(number: number)
+        case .percent: return persentFormat(number: number)
         case .money(let currencyCode): return moneyFormat(money: number, currencyCode: currencyCode) ?? ""
         }
     }

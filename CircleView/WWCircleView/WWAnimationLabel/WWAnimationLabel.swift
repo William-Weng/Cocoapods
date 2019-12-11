@@ -16,7 +16,7 @@ open class WWAnimationLabel: UILabel {
     /// 數值類型 (金額 / 百分比 / 數字)
     public enum NumberType {
         case money(currencyCode: String)
-        case persent
+        case percent
         case number
     }
     

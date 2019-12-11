@@ -87,7 +87,7 @@ extension WWLineView {
         return layer
     }
 
-    /// 基本的直接動畫
+    /// 基本的畫圓動畫
     private func pathAnimation(rate: CGFloat) -> CABasicAnimation {
         
         let animationKeyPath = "strokeEnd"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +15,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqm-4S-giw" customClass="WWCircleView" customModule="WWCircleView">
+                                <rect key="frame" x="40" y="331" width="334" height="234"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="percent">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseLineColor">
+                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="drawLineColor">
+                                        <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-EO-co9" customClass="WWCircleView" customModule="WWCircleView">
+                                <rect key="frame" x="40" y="281" width="334" height="334"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="percent">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseLineColor">
+                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="drawLineColor">
+                                        <color key="value" red="0.7489384837971832" green="0.37828487464225352" blue="0.33014166490140845" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZ4-zJ-ijT" customClass="WWCircleView" customModule="WWCircleView">
                                 <rect key="frame" x="40" y="281" width="334" height="334"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HK$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNN-9K-Wyh" customClass="WWAnimationLabel" customModule="WWCircleView">
-                                        <rect key="frame" x="126" y="148" width="82.5" height="38.5"/>
+                                        <rect key="frame" x="136" y="152.5" width="62.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,7 +90,7 @@
                                         <real key="value" value="90"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="baseLineColor">
-                                        <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="drawLineColor">
                                         <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,7 +128,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tms-vs-6bG" customClass="WWAnimationLabel" customModule="WWCircleView">
-                                <rect key="frame" x="185.5" y="149" width="43" height="32"/>
+                                <rect key="frame" x="185.5" y="207" width="43" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,26 +136,36 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aqm-4S-giw" firstAttribute="height" secondItem="vZ4-zJ-ijT" secondAttribute="height" multiplier="0.7" priority="1" id="21f-IC-EXA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDz-Fh-ykr" secondAttribute="trailing" constant="40" id="CYd-eA-kHt"/>
+                            <constraint firstItem="aqm-4S-giw" firstAttribute="width" secondItem="vZ4-zJ-ijT" secondAttribute="width" id="CzD-jV-baf"/>
                             <constraint firstItem="vZ4-zJ-ijT" firstAttribute="top" secondItem="Sbg-9R-iVP" secondAttribute="bottom" constant="40" id="GWE-wq-l5i"/>
+                            <constraint firstItem="tms-vs-6bG" firstAttribute="centerY" secondItem="Sbg-9R-iVP" secondAttribute="centerY" id="IuM-CG-VV8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sbg-9R-iVP" secondAttribute="trailing" constant="40" id="IvS-th-zGN"/>
                             <constraint firstItem="Sbg-9R-iVP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="KvO-0d-NjK"/>
+                            <constraint firstItem="Vph-EO-co9" firstAttribute="width" secondItem="vZ4-zJ-ijT" secondAttribute="width" id="RGZ-iV-nc8"/>
                             <constraint firstItem="vZ4-zJ-ijT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZLx-IH-Dvw"/>
+                            <constraint firstItem="aqm-4S-giw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bf1-yj-DT6"/>
                             <constraint firstItem="JDz-Fh-ykr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="chm-Pg-V1T"/>
-                            <constraint firstItem="tms-vs-6bG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gOx-aj-X7c"/>
-                            <constraint firstItem="Sbg-9R-iVP" firstAttribute="top" secondItem="tms-vs-6bG" secondAttribute="bottom" constant="24" id="h2e-Gd-f0d"/>
+                            <constraint firstItem="tms-vs-6bG" firstAttribute="centerX" secondItem="Sbg-9R-iVP" secondAttribute="centerX" id="clH-W7-9MR"/>
+                            <constraint firstItem="aqm-4S-giw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eCo-VE-HcQ"/>
                             <constraint firstItem="JDz-Fh-ykr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ice-nZ-4e1"/>
+                            <constraint firstItem="Vph-EO-co9" firstAttribute="height" secondItem="vZ4-zJ-ijT" secondAttribute="height" id="iif-xf-rC2"/>
+                            <constraint firstItem="Vph-EO-co9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oS5-g3-lnZ"/>
                             <constraint firstItem="vZ4-zJ-ijT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qhq-yC-Oqx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vZ4-zJ-ijT" secondAttribute="trailing" constant="40" id="t4Z-i0-qRW"/>
+                            <constraint firstItem="Vph-EO-co9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tnb-yG-GgT"/>
                             <constraint firstItem="JDz-Fh-ykr" firstAttribute="top" secondItem="vZ4-zJ-ijT" secondAttribute="bottom" constant="40" id="yOA-lX-9wL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="circleView" destination="vZ4-zJ-ijT" id="uLp-V9-3Tr"/>
+                        <outlet property="circleView2" destination="Vph-EO-co9" id="8V9-37-blM"/>
+                        <outlet property="circleView3" destination="aqm-4S-giw" id="VOF-9F-53o"/>
                         <outlet property="lineView" destination="Sbg-9R-iVP" id="fyP-xW-jxY"/>
                         <outlet property="nomeyLabel" destination="pNN-9K-Wyh" id="Oba-UN-6BQ"/>
-                        <outlet property="persentLabel" destination="tms-vs-6bG" id="J8m-vE-a0m"/>
+                        <outlet property="percentLabel" destination="tms-vs-6bG" id="J8m-vE-a0m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

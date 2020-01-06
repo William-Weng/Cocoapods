@@ -14,14 +14,14 @@ extension WWCircleView {
     /// 繪製動畫
     public func drawing(with percent: CGFloat) {
         
+        self.percent = percent
+        
         rootLayer.sublayers?.forEach({ (layer) in
             layer.removeFromSuperlayer()
         })
-
+        
         rootLayer.sublayers = nil
         rootLayer.removeAllAnimations()
-
-        self.percent = percent
         
         shapeLayerDrawing()
         animateCAShapeLayerDrawing()
@@ -55,20 +55,24 @@ extension WWCircleView {
         
         rootLayer.frame = rect
         rootLayer.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-        
+                
         layer.addSublayer(rootLayer)
     }
     
     /// 畫圓 (360度)
     func shapeLayerDrawing() {
-        let layer = baseShapeLayer(endAngle: CGFloat(Double.pi) * 2.0, color: baseLineColor)
+        let layer = baseShapeLayer(endAngle: CGFloat.pi * 2.0, color: baseLineColor)
         rootLayer.addSublayer(layer)
     }
 
     /// 畫圓弧 (動畫)
     func animateCAShapeLayerDrawing() {
-        let layer = baseShapeLayer(startAngle: angleToRadian(startAngle), endAngle: CGFloat(Double.pi) * 2.0, color: drawLineColor)
+    
+        let layer = baseShapeLayer(startAngle: angleToRadian(startAngle), endAngle: CGFloat.pi * 2.0, color: drawLineColor)
         layer.add(pathAnimation(), forKey: "strokeEndAnimation")
+        
+        if (isGradient) { rootLayer.addSublayer(gradientLayerMaker(mask: layer, from: fromColor, to: toColor)); return }
+         
         rootLayer.addSublayer(layer)
     }
 }
@@ -81,15 +85,15 @@ extension WWCircleView {
         
         let layer = CAShapeLayer()
         let path = CGMutablePath()
-        
+
         path.addArc(center: parameter.center, radius: realRadius(), startAngle: startAngle, endAngle: startAngle + endAngle, clockwise: false)
         
         layer.path = path
         layer.strokeColor = color.cgColor
         layer.lineWidth = lineWidth
-        layer.fillColor = nil
         layer.lineCap = .round
-    
+        layer.fillColor = nil
+
         return layer
     }
     
@@ -108,6 +112,20 @@ extension WWCircleView {
         pathAnimation.fillMode = .forwards
 
         return pathAnimation
+    }
+
+    /// 漸層色的CAGradientLayer
+    private func gradientLayerMaker(mask: CALayer, from: UIColor, to: UIColor) -> CAGradientLayer {
+        
+        let gradientLayer = CAGradientLayer()
+        
+        gradientLayer.frame = bounds
+        gradientLayer.colors = [from.cgColor, to.cgColor]
+        gradientLayer.mask = mask
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+
+        return gradientLayer
     }
 
     /// 取得有效半徑
@@ -145,7 +163,7 @@ extension WWCircleView {
 
         let layer = baseShapeLayer(startAngle: angleToRadian(startAngle), endAngle: CGFloat(Double.pi * 2) * realPercent(), color: drawLineColor)
         rootLayer.addSublayer(layer)
-        
+                
         #endif
     }
 }

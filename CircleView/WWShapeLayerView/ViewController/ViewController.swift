@@ -15,7 +15,7 @@ final class ViewController: UIViewController {
     @IBOutlet weak var circleView2: WWCircleView!
     @IBOutlet weak var circleView3: WWCircleView!
     @IBOutlet weak var lineView: WWLineView!
-    @IBOutlet weak var nomeyLabel: WWAnimationLabel!
+    @IBOutlet weak var moneyLabel: WWAnimationLabel!
     @IBOutlet weak var percentLabel: WWAnimationLabel!
     
     override func viewDidLoad() {
@@ -36,8 +36,8 @@ final class ViewController: UIViewController {
         circleView3.setting(animationDuration: animationDuration)
         circleView3.drawing(with: rate * 1.5)
         
-        nomeyLabel.setting(startNumber: 1, endNumber: 12345678, animationDuration: animationDuration, numberType: .money(currencyCode: "HKD"))
-        nomeyLabel.running()
+        moneyLabel.setting(startNumber: 1, endNumber: 12345678, animationDuration: animationDuration, numberType: .money(currencyCode: "HKD"))
+        moneyLabel.running()
         
         lineView.setting(animationDuration: animationDuration)
         lineView.drawing(with: rate)

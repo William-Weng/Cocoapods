@@ -14,14 +14,14 @@ extension WWLineView {
     /// 繪製動畫
     public func drawing(with percent: CGFloat) {
         
+        self.percent = percent
+        
         rootLayer.sublayers?.forEach({ (layer) in
             layer.removeFromSuperlayer()
         })
 
         rootLayer.sublayers = nil
         rootLayer.removeAllAnimations()
-
-        self.percent = percent
         
         shapeLayerDrawing()
         animateCAShapeLayerDrawing()
@@ -64,8 +64,12 @@ extension WWLineView {
     
     /// 畫直線 (動畫)
     func animateCAShapeLayerDrawing() {
+        
         let layer = baseShapeLayer(color: drawLineColor)
         layer.add(pathAnimation(rate: realPercent(for: percent)), forKey: "strokeEndAnimation")
+        
+        if (isGradient) { rootLayer.addSublayer(gradientLayerMaker(mask: layer, from: fromColor, to: toColor)); return }
+        
         rootLayer.addSublayer(layer)
     }
     
@@ -81,9 +85,9 @@ extension WWLineView {
         layer.path = path
         layer.strokeColor = color.cgColor
         layer.lineWidth = frame.height
+        layer.lineCap = .butt
         layer.fillColor = nil
-        layer.lineCap = .round
-        
+
         return layer
     }
 
@@ -102,6 +106,20 @@ extension WWLineView {
         pathAnimation.fillMode = .forwards
 
         return pathAnimation
+    }
+    
+    /// 漸層色的CAGradientLayer
+    private func gradientLayerMaker(mask: CALayer, from: UIColor, to: UIColor) -> CAGradientLayer {
+        
+        let gradientLayer = CAGradientLayer()
+
+        gradientLayer.frame = bounds
+        gradientLayer.colors = [from.cgColor, to.cgColor]
+        gradientLayer.mask = mask
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+
+        return gradientLayer
     }
 }
 

@@ -73,15 +73,22 @@ extension WWRotaryWheel {
 
         delegate?.wwRotaryWheel(self, selectedItemAt: 0, for: wheelButtons)
     }
-    
+
     /// 設定各Button的圖形
     public func imageSetting(_ images: [UIImage]) {
         wheelButtonsImage = images
+        wheelSetting()
     }
-    
+
     /// 設定各Button的文字
     public func titleSetting(_ titles: [String]) {
         wheelButtonsTitle = titles
+        wheelSetting()
+    }
+
+    /// 設定輪子上的字
+    private func wheelSetting() {
+        wheelSetting(with: count, rect: bounds, shortenRadius: shortenRadius, startAngle: startAngle)
     }
 }
 
@@ -105,7 +112,7 @@ extension WWRotaryWheel {
     /// 設定各Button的圖形
     func buttonsImageSetting(images: [UIImage]) {
         
-        if wheelButtons.count > images.count{
+        if wheelButtons.count > images.count {
             for (index, image) in images.enumerated() { wheelButtons[index].setImage(image, for: .normal) }
         } else {
             for (index, button) in wheelButtons.enumerated() { button.setImage(images[index], for: .normal) }
@@ -115,7 +122,7 @@ extension WWRotaryWheel {
     /// 設定各Button的文字
     func buttonsTitleSetting(titles: [String]) {
         
-        if wheelButtons.count > titles.count{
+        if wheelButtons.count > titles.count {
             for (index, title) in titles.enumerated() { wheelButtons[index].setTitle(title, for: .normal) }
         } else {
             for (index, button) in wheelButtons.enumerated() { button.setTitle(titles[index], for: .normal) }
